@@ -1,0 +1,140 @@
+/* ===== RESET ===== */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===== BODY ===== */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+}
+
+/* ===== NAVBAR ===== */
+.principal{
+    background-color: #0b2a6f;
+    color: white;
+    padding: 15px;
+}
+
+.principal h1{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* MENÚ PRINCIPAL */
+.principal ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.principal ul li{
+    position: relative;
+}
+
+.principal ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 8px 12px;
+    display: block;
+    transition: 0.3s;
+}
+
+.principal ul li a:hover{
+    background-color: #0a4ea3;
+    border-radius: 5px;
+}
+
+/* ===== SUBMENÚ ===== */
+.submenu ul{
+    display: none;
+    position: absolute;
+    background-color: #0a4ea3;
+    top: 100%;
+    left: 0;
+    min-width: 180px;
+    flex-direction: column;
+}
+
+.submenu:hover ul{
+    display: block;
+}
+
+.submenu ul li{
+    width: 100%;
+}
+
+.submenu ul li a{
+    padding: 10px;
+}
+
+/* ===== CONTENIDO ===== */
+.padre{
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+.hijo{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+}
+
+/* TARJETAS */
+.ieto{
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.ieto:hover{
+    transform: translateY(-5px);
+}
+
+/* IMÁGENES */
+.ieto img{
+    width: 100%;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+/* TEXTOS */
+.ieto h2{
+    color: #0b2a6f;
+    margin-bottom: 10px;
+}
+
+.ieto h3{
+    margin-top: 10px;
+    color: #0a4ea3;
+}
+
+.ieto p{
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.ieto ul{
+    padding-left: 20px;
+}
+
+.ieto ul li{
+    margin-bottom: 8px;
+}
+
+/* ===== FOOTER ===== */
+footer{
+    background-color: #0b2a6f;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
